@@ -1,0 +1,89 @@
+$max-width: 800px;
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+    font-family: 'Amethysta', serif;
+	font-weight: 300;
+	font-size: 18px;
+	background: url('/images/retina_dust.png'); 
+	color: #444;
+	colori: $color-gray01;
+	@media screen and (max-width: 1040px){
+		margin: 0 20px;
+	}
+	@media screen and (max-width: 600px){
+		font-size: 13px;
+	}
+}
+
+.bBackground {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: -moz-radial-gradient(50% 50%, farthest-side, #fff, #efefef);
+    background: -webkit-gradient(radial, 50% 50%, 250, 50% 50%, 750, from(#fff), to(#bbb));
+    z-index: -100;
+}
+
+h1{
+	font-size: 1.8em;
+}
+h2{
+    font-family: 'Fjalla One', sans-serif;
+	font-size: 1.6em;
+}
+h3{
+	font-size: 1.3em;
+}
+a{
+	text-decoration: none;
+	outline-width: 0;
+	color: $color-main;
+}
+.alignleft{
+	float: left;
+}
+.alignright{
+	float: right;
+}
+.clearfix{
+	@include pie-clearfix;
+}
+.inner{
+	width: $max-width;
+	margin: 0 auto;
+	@media screen and (max-width: 1040px){
+		width: 100%;
+	}
+}
+
+#w2btoTop {
+    display:none;
+    text-decoration:none;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    overflow:hidden;
+    width:51px;
+    height:51px;
+    border:none;
+    text-indent:-999px;
+    background:url(/images/totop.png) no-repeat   left top;
+}
+#w2btoTopHover {
+    background:url(/images/totop.png) no-repeat left -51px;
+    width:51px;
+    height:51px;
+    display:block;
+    overflow:hidden;
+    float:left;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter:alpha(opacity=0);
+}
+#w2btoTop:active, #w2btoTop:focus {
+    outline:none;
+}

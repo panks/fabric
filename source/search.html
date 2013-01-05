@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<h1 class="entry-title"><center>Search Results</center></h1>
+<div id="search_loading" style="margin: 40px 0">
+    <center><img src="/images/loading.gif"></center>
+</div>
+
+<script type="text/javascript" src="{{ root_url }}/javascripts/jquery-tapir.js"></script>
+<div id="search_results" style="display:none">
+<br>
+</div>
+<script>
+         $('#search_results').tapir({
+             'token': '{{ site.tapir_token }}',
+             'complete' : function() { document.getElementById('search_loading').style.display="none"; }
+         });
+</script>
+
