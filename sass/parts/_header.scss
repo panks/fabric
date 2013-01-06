@@ -257,7 +257,7 @@ ul#nav li a:active {
     position: relative;
     top: 2px;
 }
-ul#nav li a#current {
+ul#nav li#active a {
     color: #FFF;
     background-image: url('/images/active.png');
     background-repeat: no-repeat;
