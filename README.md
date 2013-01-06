@@ -21,7 +21,7 @@ Have problems when installing with zsh? Try `rake install\['fabric'\]` instead.
 - Ajaxified pages
 - and many more..
 
-Read [here] (http://panks.me) for detail on installation and setup.
+Read [here] (http://panks.me/blog/2013/01/new-octopress-theme-fabric/) for detail on installation and setup.
 
 
 ##Author
