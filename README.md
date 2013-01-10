@@ -29,10 +29,10 @@ Read [here] (http://panks.me/blog/2013/01/new-octopress-theme-fabric/) for detai
 ###Installation
 It’s the regular, and you probably won’t even read this section if you have ever played a little with Octopress. Go to your Octopress directory, clone my theme and run the rake script to install it, and then ‘rake generate’ to apply it to your blog.
 
-        $ cd octopress
-        $ git clone git://github.com/panks/fabric.git .themes/fabric
-        $ rake install['fabric']
-        $ rake generate
+    $ cd octopress
+    $ git clone git://github.com/panks/fabric.git .themes/fabric
+    $ rake install['fabric']
+    $ rake generate
 
 
 ###Disable Ajaxification
@@ -42,18 +42,18 @@ It’s a small script but does the job, also it gives your hash url so you can a
 
 To use it make the `list item` of your navigation bar item with id as ‘ajax’, navigation bar is defined in `octopress/.themes/fabric/source/_includes/custom/navigation.html` for instance:
 
-        <li id="ajax"><a href="{{ root_url }}/index.html">Home</a></li>
-        <li id="ajax"><a href="{{ root_url }}/about/index.html">About</a></li>
-        <li id="ajax"><a href="{{ root_url }}/blog/archives/index.html">Archives</a></li>
-        <li><a href="{{ root_url }}/atom.xml">RSS</a></li>
+    <li id="ajax"><a href="{{ root_url }}/index.html">Home</a></li>
+    <li id="ajax"><a href="{{ root_url }}/about/index.html">About</a></li>
+    <li id="ajax"><a href="{{ root_url }}/blog/archives/index.html">Archives</a></li>
+    <li><a href="{{ root_url }}/atom.xml">RSS</a></li>
 
 Anyway, some might find it little annoying or uneasy to work with and prefer just plan simple urls and reloading of pages. So to disable it:
 Go to: `octopress/.themes/fabric/source/_includes/head.html` and remove the javascript file **ajaxify.js** I have also commented it in there for easy identification.
 
 And then reinstall the theme and rebuild your blog with
 
-        $ rake install['fabric']
-        $ rake generate
+    $ rake install['fabric']
+    $ rake generate
 
 or you can remove those `id="ajax"` for list items in navigation bar.
 Done!
@@ -75,23 +75,25 @@ Taprigo on the other hand gives you a real nice way to search static websites, u
 
 For using is just [go to tapirgo](http://tapirgo.com/) and enter the url to your atom.xml file in ‘Your RSS feed’ field and your email in the next field and click ‘go’ and then you would be provided with two tokens, one is public and the other one would be a secret token, you would need only the public token for using it in your Octopress blog.
 
+![Tapirgo](http://panks.me/images/imagewithborderex.png)
+
 Now create a field named `tapir_token` in your `_config.yml` file in Octopress directory and assign it’s value as the public token. That’s all from your side. Now one can search your blog while being inside your blog and in the real content.
 For some reason if you want to use google search then you can do it this way:
 Go to: `octopress/.themes/fabric/source/_includes/custom/navigation.html` and
 
 **Replace**
 
-        <form method="get" action="{{ root_url }}/search.html" id="search">
-            <input name="query" type="text" style="margin-top:20px;" size="40" placeholder="Search..." x-webkit-speech />
-        </form>
+    <form method="get" action="{{ root_url }}/search.html" id="search">
+        <input name="query" type="text" style="margin-top:20px;" size="40" placeholder="Search..." x-webkit-speech />
+    </form>
 
 **With**
 
 
-        <form class="search" action="{{ site.simple_search }}" method="get">
-            <input class="alignright" type="text" name="q" results="0">
-            <input type="hidden" name="q" value="site:{{ site.url | shorthand_url }}">
-        </form>
+    <form class="search" action="{{ site.simple_search }}" method="get">
+        <input class="alignright" type="text" name="q" results="0">
+        <input type="hidden" name="q" value="site:{{ site.url | shorthand_url }}">
+    </form>
 
 
 ###Add accounts for social links
@@ -113,13 +115,15 @@ Go to: `octopress/.themes/fabric/source/_layouts/default.html` and remove the fo
 
 And then reinstall the theme and rebuild your blog
 
-        $ rake install['fabric']
-        $ rake generate
+    $ rake install['fabric']
+    $ rake generate
 
 
 ###Image border
 
 Image borders by default are made in such way to give the effect of a real photograph pasted on a surface.
+
+![Image Border](http://panks.me/images/imagewithborderex.png)
 
 To disable that effect, class your image to ‘noborder’ : `<img src="/image/location/filename.png" class="noborder">`
 
