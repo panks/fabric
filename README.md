@@ -23,6 +23,7 @@ Have problems when installing with zsh? Try `rake install\['fabric'\]` instead.
 
 
 ##Instructions
+(The content below I have copied from a blog post which I made about this theme, so It would not repesent a very typical/formal Readme file)
 
 * [Installation](#installation)
 * [Disable Ajaxification](#disable-ajaxification)
@@ -50,7 +51,7 @@ It’s the regular, and you probably won’t even read this section if you have 
 Here I tried something new, though the blog is completely static and based on pre-baked files, I thought it would be cool to load the pages(not post) without reloading the entire blog in browser.
 It’s a small script but does the job, also it gives your hash url so you can actually pass the links to others if you want.
 
-To use it make the `list item` of your navigation bar item with id as ‘ajax’, navigation bar is defined in `octopress/.themes/fabric/source/_includes/custom/navigation.html` for instance:
+To use it make the `list item` of your navigation bar item with id as ‘**ajax**’, navigation bar is defined in `octopress/.themes/fabric/source/_includes/custom/navigation.html` for instance:
 
     <li id="ajax"><a href="{{ root_url }}/index.html">Home</a></li>
     <li id="ajax"><a href="{{ root_url }}/about/index.html">About</a></li>
@@ -66,6 +67,7 @@ And then reinstall the theme and rebuild your blog with
     $ rake generate
 
 or you can remove those `id="ajax"` for list items in navigation bar.
+
 Done!
 
 
@@ -111,7 +113,7 @@ It has a real nice social bar in which you can display your github, facebook, tw
 
 For instance for facebook, add `facebook_user: yourfacebookusername`
 
-For some of the services the fields are already present in the `_config file`
+For some of the services the fields are already present in the `_config.yml` file
 
 
 ###Disable scroll to top button
