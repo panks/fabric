@@ -24,8 +24,14 @@ Have problems when installing with zsh? Try `rake install\['fabric'\]` instead.
 
 ##Instructions
 
-* [Installation](#Installation)
-* [Disable Ajaxification](#Disable Ajaxification)
+* [Installation](#installation)
+* [Disable Ajaxification](#disable-ajaxification)
+* [Tapirgo Search](#tapirgo-search)
+* [Add accounts for social links](#add-accounts-for-social-links)
+* [Disable scroll to top button](#disable-scroll-to-top-button)
+* [Image border](#image-border)
+* [Arrow after ‘Read on’](#arrow-after-%E2%80%98read-on%E2%80%99)
+
 
 ###Installation
 
