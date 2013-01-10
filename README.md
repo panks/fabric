@@ -75,7 +75,7 @@ Taprigo on the other hand gives you a real nice way to search static websites, u
 
 For using is just [go to tapirgo](http://tapirgo.com/) and enter the url to your atom.xml file in ‘Your RSS feed’ field and your email in the next field and click ‘go’ and then you would be provided with two tokens, one is public and the other one would be a secret token, you would need only the public token for using it in your Octopress blog.
 
-![Tapirgo](http://panks.me/images/imagewithborderex.png)
+![Tapirgo](http://panks.me/images/tapirgohome.png)
 
 Now create a field named `tapir_token` in your `_config.yml` file in Octopress directory and assign it’s value as the public token. That’s all from your side. Now one can search your blog while being inside your blog and in the real content.
 For some reason if you want to use google search then you can do it this way:
