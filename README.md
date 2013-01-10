@@ -24,8 +24,13 @@ Have problems when installing with zsh? Try `rake install\['fabric'\]` instead.
 
 ##Instructions
 
+* [Installation](#Installation)
+* [Disable Ajaxification](#Disable Ajaxification)
 
 ###Installation
+
+###[Click here to download the latest version](https://github.com/panks/fabric/archive/master.zip)
+
 It’s the regular, and you probably won’t even read this section if you have ever played a little with Octopress. Go to your Octopress directory, clone my theme and run the rake script to install it, and then ‘rake generate’ to apply it to your blog.
 
     $ cd octopress
