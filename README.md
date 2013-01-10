@@ -143,7 +143,7 @@ This is a tiny stuff and someone who has used Octopress for a month of two won�
 
 When you use in your posts to show excerpts then there is a ‘Read on’ link after each summary to go the full post and you would notice there would be bold arrow before it and a tiny arrow in front of it. That bold arrow is put by my and the tiny arrow is put by Octopress configuration, so to remove the tiny arrow go to your `_config.yml` file and search for this line
 
-`excerpt_link: "Read on & rarr;"  # "Continue reading" link text at the bottom of excerpted articles`
+`excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles`
 
 and remove `&rarr;` from it.
 
