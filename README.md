@@ -1,6 +1,6 @@
 #Fabric
 
-Fabric is a minimal and responsive theme for Octopress.
+Fabric is a minimal and responsive theme for [Octopress](http://octopress.org/").
 
 ##Install
 
@@ -78,8 +78,7 @@ For using is just [go to tapirgo](http://tapirgo.com/) and enter the url to your
 ![Tapirgo](http://panks.me/images/tapirgohome.png)
 
 Now create a field named `tapir_token` in your `_config.yml` file in Octopress directory and assign it’s value as the public token. That’s all from your side. Now one can search your blog while being inside your blog and in the real content.
-For some reason if you want to use google search then you can do it this way:
-Go to: `octopress/.themes/fabric/source/_includes/custom/navigation.html` and
+For some reason if you want to use google search then you can do it this way: Go to: `octopress/.themes/fabric/source/_includes/custom/navigation.html` and
 
 **Replace**
 
