@@ -1,6 +1,6 @@
 #Fabric
 
-Fabric is a minimal and responsive theme for [Octopress](http://octopress.org/").
+Fabric is a minimal and responsive theme for [Octopress](http://octopress.org/).
 
 ##Install
 
@@ -21,7 +21,6 @@ Have problems when installing with zsh? Try `rake install\['fabric'\]` instead.
 - Ajaxified pages
 - and many more..
 
-Read [here] (http://panks.me/blog/2013/01/new-octopress-theme-fabric/) for detail on installation and setup.
 
 ##Instructions
 
