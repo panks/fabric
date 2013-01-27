@@ -152,7 +152,7 @@ and remove `&rarr;` from it.
 Well that’s all, hope you would like this theme. For furthur information or any suggestion feel free to contact me.
 
 
-##Pull requests are very much welcome and appreciated.
+###Pull requests are very much welcome and appreciated.
 
 ##Author
 
