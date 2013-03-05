@@ -1,6 +1,7 @@
 #Fabric
 
 Fabric is a minimal and responsive theme for [Octopress](http://octopress.org/).
+View the theme in action [here](http://panks.me)
 
 ##Install
 
@@ -158,3 +159,7 @@ Well that’s all, hope you would like this theme. For furthur information or an
 
 Pankaj Kumar (me@panks.me)
 
+
+##License
+
+[The MIT License (MIT)](http://pankaj.mit-license.org/)
