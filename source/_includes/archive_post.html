@@ -8,7 +8,7 @@
 	<section class="archives"><h1 class="year">{{ date | date: "%Y" }}</h1>
 {% endunless %}
 <article>
-	<h2 class="title"><a href="{{ root_url }}{{ post.url }}">{{post.title}}</a></h2>
+  <h2 class="title"><a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h2>
 	<div class="meta">
 		<span class="date">{{ date | date: "%b %e" }}</span>
 		<span class="tags">{% include post/categories.html %}</span>
